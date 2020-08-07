@@ -1,0 +1,81 @@
+<html>
+    <head>
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    </head>
+    <body>
+        <div id="main">
+            <h1 id="title">freeCodeCamp Survey Form </h1>
+            <p id="description">Thank you for taking the time to help us improve the platform </p>
+  <form id="survey-form">
+      <label id="name-label">
+          Name
+      </label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+
+      <label id="email-label">
+        Email
+    </label>
+    <input id="email" type="email" placeholder="Enter your email">
+
+    <label id="age-label">
+        Age <span>(optional)</span>
+    </label>
+    <input id="age" type="number" min="1" max="100" placeholder="Age">
+
+    <label id="dropdown-label">
+        Which option best describes your current role? 
+    </label>
+    <select id="dropdown">
+        <option value="">Select current role </option>
+        <option value="designer">Designer</option>
+        <option value="ui">UI</option>
+    </select>
+
+    <label id="radio-label">
+        Would you recommend freeCodeCamp to a friend?
+    </label>
+    <div class="recommend">
+    <input name="recommend" value="Definitely" type="radio"><span>Definitely</span><br>
+    <input name="recommend" value="Maybe" type="radio"><span>Maybe</span><br>
+    <input name="recommend" value="Not sure" type="radio"><span>Not sure</span>
+    </div>
+
+    <label id="favorite-dropdown-label">
+        What is your favorite feature of freeCodeCamp? 
+    </label>
+    <select id="favorite-dropdown">
+        <option value="">Select an option</option>
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end">Back-end</option>
+    </select>
+
+    <label id="checkbox-label">
+        What would you like to see improved? (Check all that apply) 
+    </label>
+    <div class="improvement">
+    <input name="checkbox" value="front-end" type="checkbox"><span>Front-end Projects</span><br>
+    <input name="checkbox" value="bacnk-end" type="checkbox"><span>Back-end Projects</span><br>
+    <input name="checkbox" value="data" type="checkbox"><span>Data Visualization</span><br>
+    <input name="checkbox" value="challenges" type="checkbox"><span>Challenges</span><br>
+    <input name="checkbox" value="opensource" type="checkbox"><span>Open Source Community</span><br>
+    <input name="checkbox" value="gitter" type="checkbox"><span>Gitter help rooms</span><br>
+    <input name="checkbox" value="videos" type="checkbox"><span>Videos</span><br>
+    <input name="checkbox" value="city" type="checkbox"><span>City Meetups</span><br>
+    <input name="checkbox" value="wiki" type="checkbox"><span>Wiki</span><br>
+    <input name="checkbox" value="forum" type="checkbox"><span>Forum</span><br>
+    <input name="checkbox" value="add-courses" type="checkbox"><span>Additional Courses</span>
+    </div>
+    <label id="comments-label">
+       Any comments or suggestions?
+    </label>
+    <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+    <input id="submit" type="submit" value="Submit">
+   
+  </form>
+           
+        </div>
+    </body>
+</html>

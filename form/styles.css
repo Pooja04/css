@@ -1,0 +1,106 @@
+body{
+    background-color: #000;
+    margin: 0;
+}
+@font-face {
+    font-family: Mulish;
+    src: url(Mulish/Mulish-VariableFont_wght.ttf);
+}
+#main{
+    margin: 0 auto;
+    background-color: #fff;
+    width: 850px;
+    font-family: Mulish;
+    background-image: url("images2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+}
+
+h1#title{
+    text-align: center;
+    font-size: 38px;
+    color: #fff;
+    font-weight:100;
+    
+}
+#description{
+    text-align: center;
+    margin-bottom: 30px;
+    font-style:italic;
+    font-size: 21px;
+    margin-top: -14px;
+    color: #fff;
+}
+form {
+    width: 80%;
+    margin: 0 auto;
+    background: rgba(33, 33, 60, 0.8);
+    padding: 50px;
+    border-style: none;
+    border-radius: 5px;
+
+}
+input, select {
+    display: block;
+    width: 680px;
+    height: 40px;
+    border-radius: 6px;
+    margin: 10px 0 30px;
+    border-style: none;
+}
+form label {
+    color: #fff;
+    font-size: 22px;
+}
+form span {
+    color: white;
+    font-size: 18px;
+}
+input[type="radio"], input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    display: unset;
+    margin: 10px 8px 10px 0;
+    position:relative;
+}
+input[type="radio"]+span, input[type="checkbox"]+span {
+    position: relative;
+    top: -4px;
+}
+div.recommend, div.improvement {
+    margin: 8px 0 30px;
+}
+textarea {
+    display: block;
+    margin: 10px 0 30px;
+    width: 680px;
+    height: 130px;
+}
+input[type="submit"] {
+    display: block;
+    margin: 10px 0 30px;
+    width: 680px;
+    height: 55px;
+    border-radius: 4px;
+    background-color: #009e3c;
+    color: #fff;
+    font-size: 20px;
+}
+::-webkit-input-placeholder { /* Edge */
+    font-size:18px;
+    padding: 10px;
+    opacity: 0.6;
+    font-family: Mulish;
+  }
+  textarea::-webkit-input-placeholder { /* Edge */
+    font-size:18px;
+    padding: 10px;
+    opacity: 0.8;
+    font-family: Mulish;
+  }
+select {
+    font-size:18px;
+    padding: 8px;
+    font-family: Mulish;
+}
+
