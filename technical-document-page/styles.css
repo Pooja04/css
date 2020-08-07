@@ -1,0 +1,86 @@
+body{
+    background-color: #000;
+    margin: 0;
+}
+#main{
+    background-color: #fff;
+    font-family: sans-serif;
+    padding-left: 360px;
+}
+nav {
+    width: 360px;
+    border-right: 4px solid rgba(143, 139, 139, 0.7) ;
+    position:fixed;
+    top:0;
+    left:0;
+}
+nav a {
+    text-decoration: none;
+    color: #5f5959;
+}
+#main-doc {
+    
+    padding-left: 48px;
+    padding-top: 2px;
+}
+#main-doc .main-section h2 {
+    font-size: 38px;
+    font-weight: 100;
+}
+#main-doc .main-section *:not(h2) {
+    margin-left: 14px;
+    font-size: 19px;
+    color: #5f5959;
+    line-height: 27px;
+}
+nav{
+ height: 95%; }
+nav h1 {
+    margin-top: 6px;
+    font-size: 35px;
+    font-weight: 100;
+}
+nav ul {
+    padding-left: 0;
+}
+nav ul li {
+    padding: 16px 32px;
+    font-size: 20px;
+    border-top: 1.5px solid rgba(74, 63, 63, 0.7) ;
+    list-style: none;
+}
+#menu-short{
+    display: none;
+    z-index: 10;
+    position:fixed;
+}
+nav {
+    display: block;
+}
+#menu-short div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    margin: 10px;
+}
+@media only screen and (max-width: 600px) {
+    nav {
+        display:none;
+        background-color:#fff;
+    }
+    #main{
+        padding-left: 0;
+    }
+    #menu-short{
+        display: block;
+        z-index: 10;
+        position:fixed;
+    }
+
+    nav h1 {
+        margin-top: 55px;
+
+    }
+   
+  }

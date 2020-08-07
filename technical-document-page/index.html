@@ -1,0 +1,148 @@
+<html>
+<head>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>
+    function myFunction() {
+  var x = document.getElementById("navigate");
+  if (x.style.display == "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</head>
+<body>
+    <div id="main">
+        <div id="menu-short" onclick="myFunction()">
+        <div></div>
+        <div></div>
+        <div></div>
+        </div>
+    <div id="main-doc">
+        
+        <section class="main-section" id="introduction">
+            <h2>Introduction</h2>
+            <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight
+                language. Inside a host environment (for example, a web browser), JavaScript can be connected to the
+                objects of its environment to provide programmatic control over them.</p>
+            <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of
+                language elements such as operators, control structures, and statements. Core JavaScript can be extended
+                for a variety of purposes by supplementing it with additional objects; for example:</p>
+            <ul>
+                <li>
+                    Client-side JavaScript extends the core language by supplying objects to control a browser and its
+                    Document Object Model (DOM). For example, client-side extensions allow an application to place
+                    elements on an HTML form and respond to user events such as mouse clicks, form input, and page
+                    navigation.
+                </li>
+                <li>
+                    Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript
+                    on a server. For example, server-side extensions allow an application to communicate with a
+                    database, provide continuity of information from one invocation to another of the application, or
+                    perform file manipulations on a server.
+
+                </li>
+            </ul>
+        </section>
+        <section class="main-section" id="should_already_know">
+            <h2>What you should already know</h2>
+            <p>This guide assumes you have the following basic background:</p>
+            <ul>
+                <li>
+                    A general understanding of the Internet and the World Wide Web (WWW).
+                </li>
+                <li>
+                    Good working knowledge of HyperText Markup Language (HTML).
+                </li>
+                <li>
+                    Some programming experience. If you are new to programming, try one of the tutorials linked on the
+                    main page about JavaScript.
+                </li>
+            </ul>
+        </section>
+        <section class="main-section" id="javascript_and_java">
+            <h2>JavaScript and Java</h2>
+            <p>JavaScript and Java are similar in some ways but fundamentally different in some others.</p>
+            <p>The JavaScript language resembles Java but does not have Java's static typing and strong type checking.
+                JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs
+                which was the reason why it was renamed from LiveScript to JavaScript. </p>
+        </section>
+        <section class="main-section" id="hellow_world">
+            <h2>Hello world</h2>
+            <p>This part of the tutorial is about core JavaScript, the language itself.</p>
+
+            <p> But we need a working environment to run our scripts and, since this book is online, the browser is a
+                good choice. We’ll keep the amount of browser-specific commands (like alert) to a minimum so that you
+                don’t spend time on them if you plan to concentrate on another environment (like Node.js). We’ll focus
+                on JavaScript in the browser in the next part of the tutorial.</p>
+
+            <p> So first, let’s see how we attach a script to a webpage. For server-side environments (like Node.js),
+                you can execute the script with a command like "node my.js".</p>
+                <code>let user = 'John',</code>
+            <code> age = 25,</code>
+        <code> message = 'Hello';</code>
+
+                    Sample:
+                    <code>let user = 'John'</code>
+                        <code>, age = 25</code>
+                       <code> , message = 'Hello';</code>
+        </section>
+        <section class="main-section" id="variables">
+            <h2>Variables</h2>
+            <p>Most of the time, a JavaScript application needs to work with information. Here are two examples:</p>
+            <ol>
+                <li>An online shop – the information might include goods being sold and a shopping cart.</li>
+                <li>A chat application – the information might include users, messages, and much more.</li>
+            </ol>
+            <p>Variables are used to store this information.</p>
+            <h2><a class="main__anchor" name="a-variable" href="#a-variable">A variable</a></h2>
+            <p>A <a href="https://en.wikipedia.org/wiki/Variable_(computer_science)">variable</a> is a "named storage"
+                for data. We can use variables to store goodies, visitors, and other data.</p>
+            <p>To create a variable in JavaScript, use the <code>let</code> keyword.</p>
+            <p>The statement below creates (in other words: <em>declares</em>) a variable with the name "message":</p>
+            <code class=" language-javascript"><code class="token keyword">let</code> message<code class="token punctuation">;</code></code>
+            <p>Now, we can put some data into it by using the assignment operator =:
+
+            </p>
+            <code class="mask">
+            </code></code><code class=" language-javascript"><code class="token keyword">let</code> message<code class="token punctuation">;</code>
+            
+            message <code class="token operator">=</code> <code class="token string">'Hello'</code><code class="token punctuation">;</code> <code class="token comment">// store the string</code></code>
+        </section>
+        <section class="main-section" id="conditional_statements">
+            <h2>Conditional Statements</h2>
+            <p>Very often when you write code, you want to perform different actions for different decisions.</p>
+
+            <p>You can use conditional statements in your code to do this.</p>
+
+            <p>In JavaScript we have the following conditional statements:</p>
+            <ul>
+                <li>Use <code class="w3-codespan">if</code> to specify a block of code to be executed, if a specified
+                    condition is true</li>
+                <li>Use <code class="w3-codespan">else</code> to specify a block of code to be executed, if the same
+                    condition is
+                    false</li>
+                <li>Use <code class="w3-codespan">else if</code> to specify a new condition to test, if the first
+                    condition is false</li>
+                <li>Use <code class="w3-codespan">switch</code> to specify many alternative blocks of code to be
+                    executed</li>
+            </ul>
+        </section>
+
+    </div>
+    <nav id="navigate">
+        <h1>JS Documentation</h1>
+        <ul>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+    <li><a class="nav-link"  href="#should_already_know">What you should already know?</a></li>
+<li><a class="nav-link" href="#javascript_and_java">JavaScript and Java</a></li>
+<li><a class="nav-link" href="#variables">Variables</a></li>
+<li><a class="nav-link" href="#conditional_statements">Conditional Statements</a></li>
+    </ul>
+    </nav>
+    </div>
+</body>
+
+</html>
